@@ -66,6 +66,12 @@ body
     font-weight: bold;
 }
 
+.welcome_image
+{
+    width: 60%;
+    max-width: 800px;
+}
+
 #output_container
 {
     /* gets toggled to visible by javascript */
