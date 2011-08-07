@@ -67,11 +67,20 @@
         
                         $('#output_age_val').html(days)
 
+
+                        // link to add event to Google Calendar
+                        gCalDays_date = next10e4d_date.toString('yyyyMMdd');
+                        gCalDays = "<a href=\'http://www.google.com/calendar/event?action=TEMPLATE&text=" + next10e4d + " days old&dates=" + gCalDays_date + "/" + gCalDays_date + "&details=&location=&trp=false&sprop=http%3A%2F%2Fwww.onegigasecond.com%2F&sprop=name:onegigasecond.com\' target=\'_blank\'><img class=\'gcal\' src=\'http://www.google.com/calendar/images/ext/gc_button6.gif\' border=0></a>";
+
+                        gCalSecs_date = next10e9s_date.toString('yyyyMMdd');
+                        gCalSecs = "<a href=\'http://www.google.com/calendar/event?action=TEMPLATE&text=" + next10e9s + " seconds old&dates=" + gCalSecs_date + "/" + gCalSecs_date + "&details=&location=&trp=false&sprop=http%3A%2F%2Fwww.onegigasecond.com%2F&sprop=name:onegigasecond.com\' target=\'_blank\'><img class=\'gcal\' src=\'http://www.google.com/calendar/images/ext/gc_button6.gif\' border=0></a>";
+
+
                         $('#output_days_val').html(next10e4d);
-                        $('#output_days_date').html(next10e4d_date.toString(dateFormat));
+                        $('#output_days_date').html(next10e4d_date.toString(dateFormat) + gCalDays);
 
                         $('#output_secs_val').html(next10e9s);
-                        $('#output_secs_date').html(next10e9s_date.toString(dateFormat));
+                        $('#output_secs_date').html(next10e9s_date.toString(dateFormat) + gCalSecs);
 
                         if( output_state == 'hidden' )
                         {
@@ -113,8 +122,11 @@
 
             <div id="output_container">
                 <div id="output_age">you are <span id="output_age_val"></span> days old</div>
-                <div id="output_days">you will be <span id="output_days_val"></span> days old on <span id="output_days_date"></span></div>
-                <div id="output_secs">you will be <span id="output_secs_val"></span> seconds old on <span id="output_secs_date"></span></div>
+                <div id="output_days">you will be <span id="output_days_val"></span> days old on <span id="output_days_date"></span>
+</div>
+                <div id="output_secs">you will be <span id="output_secs_val"></span> seconds old on <span id="output_secs_date"></span>
+                
+                </div>
             </div>
     
 

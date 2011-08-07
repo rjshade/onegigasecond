@@ -6,7 +6,6 @@ body
     text-align:center;
 }
 
-
 #container
 {
     text-align: center;
@@ -45,21 +44,26 @@ body
 
     padding-bottom: 50px;
     position: relative;
-    top: -200px;
+    top: -300px;
     visibility: visible
 }
 
-#input_container
+#welcome_text
 {
+    padding: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
+
 #output_container
 {
+    /* gets toggled to visible by javascript */
     display: none;
 }
 
 #question
 {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 10px
 }
 
@@ -78,6 +82,14 @@ body
 }
 #date_input.defaultText {}
 #date_input.defaultTextActive { color: #ccc}
+
+/* add to google calendar buttons */
+img.gcal
+{
+    vertical-align: middle;
+    height: 1.5em;
+    padding-left: 10px;
+}
 
 #output_age
 {
@@ -110,12 +122,6 @@ body
     font-size: 1.5em;
 }
 
-#welcome_text
-{
-    padding: 30px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 #footer
 {
     padding-top: 30px;
