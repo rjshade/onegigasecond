@@ -105,11 +105,13 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="wrapper">
+       <div id="blank"></div>
+        <div id="welcome_text">
+            one gigasecond: one billion seconds, 31.7 years
+        </div>
         <div id="content">
-            <div id="welcome_text">
-                one gigasecond: one billion seconds, 31.7 years
-            </div>
+
             <div id="input_container">
                 <div id="question">
                     when were you born?
@@ -122,17 +124,16 @@
 
             <div id="output_container">
                 <div id="output_age">you are <span id="output_age_val"></span> days old</div>
-                <div id="output_days">you will be <span id="output_days_val"></span> days old on <span id="output_days_date"></span>
-</div>
-                <div id="output_secs">you will be <span id="output_secs_val"></span> seconds old on <span id="output_secs_date"></span>
-                
-                </div>
+                <div id="output_days">you will be <span id="output_days_val"></span> days old on <span id="output_days_date"></span></div>
+                <div id="output_secs">you will be <span id="output_secs_val"></span> seconds old on <span id="output_secs_date"></span></div>
             </div>
-    
-
-            <div id="footer"><a href="http://www.onegigasecond.com/">onegigasecond.com</a> | <a href="http://www.rjshade.com/">Robbie Shade</a></div>
-        </div>
+            <div class="push"></div> 
+        </div> 
     </div>
+    <div id="footer">
+        <a href="http://www.onegigasecond.com/">onegigasecond.com</a> by <a href="http://www.rjshade.com/">Robbie Shade</a></div>
+    </div>
+
 </body>
 
 </html>
