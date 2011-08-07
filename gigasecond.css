@@ -26,7 +26,7 @@ body
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -25px; /* the bottom margin is the negative value of the footer's height */
+    margin: 0 auto -32px; /* the bottom margin is the negative value of the footer's height */
 }
 
 #blank
@@ -98,7 +98,7 @@ body
 img.gcal
 {
     vertical-align: middle;
-    height: 1.5em;
+    height: 2em;
     padding-left: 10px;
 }
 
@@ -106,8 +106,9 @@ img.gcal
 {
     padding:5px;
     margin-top: 30px;
+    margin-bottom:30px;
 }
-#output_age_val
+.emph
 {
     font-weight: bold;
     font-size: 1.5em;
@@ -136,11 +137,23 @@ img.gcal
 #footer
 {
     color: #555;
-    font-size: 0.7em;
-    padding:5px;
-    height: 25px;
+    font-size: 0.9em;
     background-color: #efefef;
     border-top: 2px solid #ccc;
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+/* remember to set -ve margin to height + border(top/bottom) + padding(top/bottom)
+ * e.g. #footer{height:50px; border-top: 3px; padding-top: 5px;} results in a -ve
+ * margin of -58px */
+.push
+{ height: 25px; clear: both; }
+#footer 
+{
+    height:25px; /* .push must be the same height as .footer */
+    clear:both;
 }
 
 #footer a 
@@ -155,9 +168,36 @@ img.gcal
 }
 
 
-#footer, .push 
+#footer .credit
 {
-    height: 25px; /* .push must be the same height as .footer */
-    clear:both;
+    display:block;
+    clear:none;
+    float:right;
+    padding:0;
+    border:0;
+    margin:0;
+    padding-right: 15px;
+    padding-top: 2px;
 }
 
+.gplusone
+{
+    height: 25px;
+    float:right;
+    clear: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.fblike
+{
+    height: 25px;
+    width: 70px;
+    float:right;
+    clear: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
