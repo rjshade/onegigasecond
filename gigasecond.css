@@ -76,6 +76,7 @@ body
 {
     /* gets toggled to visible by javascript */
     display: none;
+    font-size: 1.5em;
 }
 
 #question
@@ -104,8 +105,8 @@ body
 img.gcal
 {
     vertical-align: middle;
-    height: 2em;
-    padding-left: 10px;
+    height: 30px;
+    padding: 10px;
 }
 
 #output_age
