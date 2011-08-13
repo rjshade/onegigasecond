@@ -56,7 +56,7 @@
                 var today = Date.today();
                 var date_input = $('#date_input').val()
                 birth = Date.parse(date_input)
-                //alert(birth)
+                $('#test_output').html("input = " + date_input + " , output = " + birth);
                     
                 if( birth != null  )
                 {
@@ -144,6 +144,8 @@
         </div>
         <div id="content">
 
+            <div id="test_output">
+            </div>
             <div id="input_container">
                 <div id="question">
                     when were you born?
